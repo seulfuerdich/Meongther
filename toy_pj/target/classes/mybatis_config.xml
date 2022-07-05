@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+    	<!-- 전통적 DB컬럼명을 JAVA의 Camel 표시법으로 자동 매핑 설정 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- result type이 HashMap일 때 NUll 처리 -->
+        <setting name="callSettersOnNulls" value="true"/>
+        <!-- Oracle 부적합한 열유형 Null 처리 -->
+        <setting name="jdbcTypeForNull" value="NULL"/>
+    </settings>
+</configuration>
